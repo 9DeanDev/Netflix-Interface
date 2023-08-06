@@ -1,0 +1,112 @@
+body{
+    background-image: url(/Gallery/coffee_apple_macbook_pro_java_cafe_caffeine_work_writer-822787.jpg!d);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
+#header{
+    background-color: #131921;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+#logo img{
+    width: 50px;
+    height: auto;
+    padding: 5px 0;
+}
+#main-menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+#main-menu li{
+    position: relative;
+}
+#main-menu li a{
+    color: #f8f8f8;
+    display: block;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+#main-menu ul.sub-menu{
+    position: absolute;
+    background-color: #131921;
+    list-style: none;
+    padding: 10px 0px;
+    width: 200px;
+    border: 1px solid #4d4d4d;
+    display: none;
+}
+#main-menu li:hover>ul.sub-menu{
+    display: block;
+}
+#main-menu ul.sub-menu a{
+    padding: 8px 15px;
+    border-bottom: 1px solid #4d4d4d;
+}
+#main-menu ul.sub-menu li:last-child a{
+    border: none;
+    padding-bottom: 0;
+}
+#main-menu ul.sub-menu li:hover>a{
+    border-color: #8a8a8a;
+}
+#main-menu ul.sub-menu ul.sub-menu{
+    left: 201px;
+    top: -5px;
+}
+/* Thiết lập border khi hover */
+#main-menu>li>a{
+    position: relative;
+}
+#main-menu>li>a::before{
+    content: "";
+    height: 3px;
+    width: 0px;
+    background-color: #f00;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#main-menu>li:hover>a::before{
+    width: 100%;
+}
+#main-menu>li.has-child::after{
+    font: var(--fa-font-solid);
+    content: "\f107";
+    color: #f5f5f56e;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 22px 0;
+}
+/* #main-menu li a:hover{
+    color: #f00;
+} */
+#main-menu .sub-menu li:hover>a{
+    color: #f00;
+}
+#main-menu .sub-menu>li.has-child::after{
+    font: var(--fa-font-solid);
+    content: "\f105";
+    color: #f5f5f56e;
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    padding: 7px 0;
+}
+#main-menu .sub-menu li.has-child:hover::after{
+    color: #f00;
+}
