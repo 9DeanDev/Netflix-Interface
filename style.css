@@ -1,0 +1,37 @@
+#wrapper {
+    width: 100%;
+}
+
+#header {
+    background: transparent;
+    background-image: url(/Gallery/ictvietnam.mediacdn.vn-162041676108402688-2022-11-27-_netflix-16695549643941955374520-0-0-1125-1800-crop-16695549741742062446321.jpeg);
+    background-size: cover;
+    height: 630px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.body-header {
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin-top: 150px;
+}
+
+a {
+    color: white;
+}
