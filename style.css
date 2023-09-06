@@ -1,37 +1,72 @@
-#wrapper {
+/* #wrapper {
     width: 100%;
 }
 
+
+}
+
+ */
 #header {
-    background: transparent;
     background-image: url(/Gallery/ictvietnam.mediacdn.vn-162041676108402688-2022-11-27-_netflix-16695549643941955374520-0-0-1125-1800-crop-16695549741742062446321.jpeg);
     background-size: cover;
-    height: 630px;
-}
-
-.flex {
-    display: flex;
-}
-
-.flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex-between {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .body-header {
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    margin-top: 150px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 120px 0;
 }
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+}
+
+.flex-item-left {
+    flex: 50%;
+    height: 40px;
+}
+
+.flex-item-right {
+    flex: -50%;
+    display: flex;
+}
+
+@media(max-width:800px) {
+    .flex-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.form-select {
+    cursor: pointer;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+}
+
+.btn {
+    height: 40px;
+
+}
+
+/* .carousel {
+    background-image: url(/Gallery/tim-hieu-ve-netflix-uu-nhuoc-diem-va-cac-goi-cuoc\ \(11\)-800x450.jpg);
+    background-size: cover;
+} */
 
 a {
     color: white;
+}
+
+.justify-center {
+    justify-content: center;
+    max-height: 60px;
+}
+
+.display-5 {
+    font-size: 50px !important;
+    font-weight: 800 !important;
 }
